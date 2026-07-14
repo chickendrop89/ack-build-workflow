@@ -1,5 +1,5 @@
 #  A github workflow to build custom android common kernels with specified parameters
-#  Copyright (C) 2025 chickendrop89
+#  Copyright (C) 2025 chkndrp
 #
 #  This program is free software: you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
@@ -31,7 +31,7 @@ on:
       custom_kernel_repo:
         description: 'Custom kernel repository'
         required: true
-        default: 'https://github.com/chickendrop89/device_xiaomi_unified-kernel'
+        default: 'https://github.com/ChicKernel/device_xiaomi_gemstones-kernel'
         type: string
       custom_kernel_repo_branch:
         description: 'Custom kernel repository branch'
@@ -46,7 +46,7 @@ on:
       anykernel_url_plus_branch:
         description: 'Space-separated AnyKernel3 fork URL + (Optional) Branch'
         required: true
-        default: 'https://github.com/chickendrop89/AnyKernel3'
+        default: 'https://github.com/ChicKernel/AnyKernel3'
         type: string
       kernel_image_type:
         description: 'Kernel image to package (Image.gz, Image.lz4, etc)'

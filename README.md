@@ -2,10 +2,10 @@
 A github workflow to build custom android common kernels with specified parameters
 
 # How to use this?
-[Fork this repo](https://github.com/chickendrop89/ack-build-workflow/fork), 
+[Fork this repo](https://github.com/ChicKernel/ack-build-workflow/fork), 
 open the 'Actions' tab in your fork and run the only workflow there
 
-These parameters are by default configured for [chickernel](https://github.com/chickendrop89/device_xiaomi_unified-kernel), 
+These parameters are by default configured for [chickernel](https://github.com/ChicKernel/device_xiaomi_gemstones-kernel), 
 however, they can be configured for any ACK if you know what you're doing.
 
 Parameters:
@@ -18,11 +18,11 @@ Parameters:
 - 🔴 Custom kernel repository:
     - Git URL leading to your custom kernel repository
     
-    `default:` **[chickernel](https://github.com/chickendrop89/device_xiaomi_unified-kernel)**
+    `default:` **[chickernel](https://github.com/ChicKernel/device_xiaomi_gemstones-kernel)**
 - 🔴 Custom kernel repository branch:
     - Branch to use from your custom kernel repository
 
-    `default:` **[android13-5.15-lts](https://github.com/chickendrop89/device_xiaomi_unified-kernel/tree/android13-5.15-lts)**
+    `default:` **[android13-5.15-lts](https://github.com/ChicKernel/device_xiaomi_gemstones-kernel/tree/android13-5.15-lts)**
 - 🔴 Use the latest clang prebuilts
     - If enabled, will override the ACK manifest to use upstream branch of `clang/host/linux-x86` prebuilts
     - On newer branches, select this strictly only if your `build.config.constants` uses the upstream clang toolchain.
@@ -32,7 +32,7 @@ Parameters:
     - Git URL leading to your AK3 fork, and optionally branch
     - Used in post-build to package the kernel image(s)
 
-    `default:` **[chickernel AK3 fork](https://github.com/chickendrop89/AnyKernel3)**
+    `default:` **[chickernel AK3 fork](https://github.com/ChicKernel/AnyKernel3)**
 - 🟡 Kernel image to package:
     - Decides what image type is packaged with AK3
     - This allows for using compressed `Image.<xxx>` or `Image.<xxx>-dtb`
